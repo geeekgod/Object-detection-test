@@ -2,8 +2,14 @@
   "name": "object-detection",
   "version": "0.1.0",
   "private": true,
-  "author": {"name": "Rishabh Singh"},
+  "author": {
+    "name": "Rishabh Singh"
+  },
   "dependencies": {
+    "@emotion/react": "^11.7.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.2.3",
+    "@mui/styled-engine-sc": "^5.1.0",
     "@tensorflow-models/coco-ssd": "^2.1.0",
     "@tensorflow/tfjs": "^2.4.0",
     "@testing-library/jest-dom": "^4.2.4",
@@ -13,7 +19,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
-    "react-webcam": "^5.2.0"
+    "react-webcam": "^5.2.0",
+    "styled-components": "^5.3.3"
   },
   "scripts": {
     "start": "react-scripts start",

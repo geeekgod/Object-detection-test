@@ -3,7 +3,7 @@ export const drawRect = (detection, ctx) => {
     const [x, y, width, height] = prediction["bbox"];
     const text = prediction["class"];
 
-    const color = "blue";
+    const color = "white";
     ctx.strokeStyle = color;
     ctx.font = "38px Arial";
     ctx.fillStyle = color;

@@ -4,6 +4,8 @@ import * as cocossd from "@tensorflow-models/coco-ssd";
 import Webcam from "react-webcam";
 import "./App.css";
 import { drawRect } from "./utilities";
+import { Box } from "@mui/material";
+
 
 function App() {
   const webcamRef = useRef(null);
@@ -43,8 +45,8 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <Box className="App">
+      <Box className="App-header">
         <Webcam
           ref={webcamRef}
           muted={true}
@@ -59,6 +61,10 @@ function App() {
             maxWidth: 640,
             maxHeight: 480,
             width: "100%",
+            borderRadius: "22px",
+           overflow: "hidden",
+           WebkitTransform: "translateZ(0)",
+           boxShadow: "0 19px 51px 0 rgba(0,0,0,0.16), 0 14px 19px 0 rgba(0,0,0,0.07)"
           }}
         />
 
@@ -75,10 +81,11 @@ function App() {
             maxWidth: 640,
             maxHeight: 480,
             width: "100%",
+            
           }}
         />
-      </header>
-    </div>
+      </Box>
+    </Box>
   );
 }
 
